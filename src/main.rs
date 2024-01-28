@@ -32,6 +32,9 @@ impl ZellijPlugin for State {
         let mut should_render = false;
         let selected = self.selected;
 
+        let plugin_id = get_plugin_ids().plugin_id;
+        rename_plugin_pane(plugin_id, "tab-finder");
+
         match event {
             Event::TabUpdate(tab_info) => {
                 self.tabs = tab_info;

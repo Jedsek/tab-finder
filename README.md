@@ -30,13 +30,19 @@ keybinds {
 
 ## Release
 
-The precompiled `.wasm` file could be found in [release](https://github.com/Jedsek/tab-finder/releases/)
+The precompiled && optimized `.wasm` file could be found in [release](https://github.com/Jedsek/tab-finder/releases/)
 
 ## Manual
+
+Make sure you have `rustup` installed:
 
 1. `rustup target add wasm32-wasi`
 2. `cargo build --release`
 3. `cp target/wasm32-wasi/release/tab-finder.wasm ~/.config/zellij/plugins/`
+
+You could also install `wasm-opt` and then optimized `.wasm` file:
+
+`wasm-opt -O4 -o tab-finder.wasm target/wasm32-wasi/release/tab-finder.wasm`
 
 
 

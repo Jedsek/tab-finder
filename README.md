@@ -1,6 +1,6 @@
 # tab-finder
 
-This is a [zellij](zellij.dev) plugin for quickly switching to specific tab by inputing its name, with beautiful UI.
+This is a [zellij](zellij.dev) plugin for quickly switching to specific tab by inputing its name, with beautiful UI.  
 It based on zellij-tile-`0.39.2`, so should be able to work on `zellij 39.0` or newer
 
 # Show

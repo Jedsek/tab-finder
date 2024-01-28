@@ -1,0 +1,16 @@
+[package]
+name = "tab-finder"
+version = "0.1.0"
+authors = ["Aram Drevekenin <aram@poor.dev>"]
+edition = "2021"
+
+[profile.release]
+lto = true
+opt-level = 3
+
+[dependencies]
+ansi_term = "0.12.1"
+zellij-tile = "0.39.2"
+chrono = "0.4.0"
+nucleo = "0.3.0"
+colored = "2.1.0"
